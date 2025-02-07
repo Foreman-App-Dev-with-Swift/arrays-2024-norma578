@@ -124,6 +124,9 @@ print("***PROBLEM 1.2 : MORE ARRAY ADDITIONS")
 //This is how you do this: 1. Create a new array called moreNames and fill it with four new names.
 // 2. Then add that new array to your original array. Yes ADD.
 //How? To add in multiple names in one step use the += operator we will need to have the names in a separate array that contains the names. Then print your registrationList and observe the output in the console.
+var moreNames : [String] = ["Mike,",Charles","Jack","Finn"]
+registrationList += moreNames
+print(registrationList)
 
 
  print("\n")
