@@ -124,7 +124,7 @@ print("***PROBLEM 1.2 : MORE ARRAY ADDITIONS")
 //This is how you do this: 1. Create a new array called moreNames and fill it with four new names.
 // 2. Then add that new array to your original array. Yes ADD.
 //How? To add in multiple names in one step use the += operator we will need to have the names in a separate array that contains the names. Then print your registrationList and observe the output in the console.
-var moreNames : [String] = ["Mike,",Charles","Jack","Finn"]
+var moreNames : [String] = ["Mike,","Charles","Jack","Finn"]
 registrationList += moreNames
 print(registrationList)
 
@@ -137,14 +137,17 @@ print("***PROBLEM 1.3 : ARRAY INSERTION")
  //Hint: see line 78
 //print the registration list and observe the output making sure it is correct.
 
+registrationList.insert("Charlie", at: 1)
+print(registrationList)
+print("/n")
 
 
  print("\n")
  
 print("***Example for 1.4")
 //You can identify a particular portion of an array by adding the element number with name of the array. This is called subscripting.
-registrationList[1] = "Charlie1"
-print(registrationList)
+// registrationList[1] = "Charlie1"
+// print(registrationList)
 
 print("\n")
 
@@ -153,7 +156,8 @@ print("***PROBLEM 1.4 : ARRAY MODIFICATION")
  //See the example above and remember the sixth element is the fifth index.
 // registrationList[1] = "Charlie1"
 // print(registrationList)
-
+registrationList[5] = "Rebecca"
+print(registrationList)
 
  print("\n")
  
@@ -161,7 +165,11 @@ print("***PROBLEM 1.4 : ARRAY MODIFICATION")
 print("***PROBLEM 1.5 : ARRAY REMOVAL")
 // Call removeLast() on registrationList. Store the result of removeLast() into a new constant deletedItem. If done correctly, this should remove Rebecca from the collection. print the registrationList, then print deletedItem.
 //Observe the output in the console and make sure it is correct.
-
+registrationList.removeLast()
+let deletedItem = ("Rebecca")
+print(registrationList)
+print(deletedItem)
+print("/n")
  
 print("\n")
 
@@ -172,7 +180,8 @@ print("***PROBLEM 2.0 : FITNESS TRACKING")
  Using arrays of type String, create at least THREE lists (arrays), one for walking challenges, and one for running challenges, and one for lifting challenges - in that order. Each should have at least THREE challenges or how many times a week it's done and should be initialized using an array. Feel free to create more lists for different activities.
  */
 //Print all three of the arrays to make sure it outputs in the console.
-
+print("walk 3 miles a day")
+print("Run 5 times a week")
 
 
 
